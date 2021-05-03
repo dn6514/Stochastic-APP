@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#PBS -q normal
+#PBS -l walltime=02:00:00
+#PBS -l mem=4GB
+
+v=1;
+mkdir SrStoc$v;
+for ((i=1; i<=10; i++))
+  do
+    mkdir SR$v;
+    cp stoc600 SR$v/;
+	cp param0.txt SR$v/param.txt;
+    cp C1/C$i.txt SR$v/data.txt;
+    g++ -o sr$v SrStoc$v.cpp;
+    ./sr$v;
+    cd SR$v/;
+    /home/595/dn6514/cplex -f stoc600;
+    rm stoc600;
+    cd ../;
+    mv SR$v SrStoc$v/C$i;
+    rm sr$v;
+  done

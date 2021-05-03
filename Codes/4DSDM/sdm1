@@ -1,0 +1,36 @@
+#!/bin/bash
+
+#PBS -q normal
+#PBS -l walltime=02:00:00
+#PBS -l mem=4GB
+
+r=3;
+s=2;
+ns=$(( r + 3 * s ));
+v=1;
+tl=300;
+mkdir SdmStoc$v;
+for ((k=4; k<=10; k++))
+do
+  mkdir SDM$v;
+  cp stoc$tl SDM$v/;
+  cp C1/C$k.txt SDM$v/data.txt;
+  cp param2.txt SDM$v/param.txt;
+  g++ -o c$v sdmdec$v.cpp;
+  ./c$v;
+  for ((i=1; i<=ns; i++))
+  do
+    g++ -o c$v sdm$v.cpp;
+    ./c$v;
+    cd SDM$v/;
+    cp asset$i.lp asset.lp;
+    /home/595/dn6514/cplex -f stoc$tl;
+    mv cplex.log sol$i.log;
+    rm asset.lp;
+    cd ../;
+  done
+  g++ -o c$v sdmextr$v.cpp;
+  ./c$v;
+  mv SDM$v SdmStoc$v/C$k;
+  rm c$v;
+done

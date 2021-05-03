@@ -1,0 +1,169 @@
+
+Log started (V12.10.0.0) Tue Apr 20 04:57:56 2021
+
+Warning, line 402: Name 's217' does not exist.
+Warning, line 403: Name 's176' does not exist.
+Warning, line 404: Name 's254' does not exist.
+Warning, line 406: Name 's56' does not exist.
+Warning, line 407: Name 's233' does not exist.
+
+Problem 'asset.lp' read.
+Read time = 0.00 sec. (0.03 ticks)
+New value for default parallel thread count: 1
+New value for time limit in seconds: 400
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               400
+Found incumbent of value -0.890306 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 114 rows and 20 columns.
+MIP Presolve modified 161 coefficients.
+Aggregator did 75 substitutions.
+Reduced MIP has 117 rows, 115 columns, and 436 nonzeros.
+Reduced MIP has 101 binaries, 6 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.58 ticks)
+Probing fixed 13 vars, tightened 0 bounds.
+Probing time = 0.00 sec. (0.17 ticks)
+Cover probing fixed 0 vars, tightened 9 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 24 rows and 23 columns.
+MIP Presolve modified 6 coefficients.
+Reduced MIP has 93 rows, 91 columns, and 292 nonzeros.
+Reduced MIP has 78 binaries, 5 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.28 ticks)
+Probing time = 0.00 sec. (0.09 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 93 rows, 91 columns, and 292 nonzeros.
+Reduced MIP has 78 binaries, 5 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.21 ticks)
+Probing time = 0.00 sec. (0.09 ticks)
+Clique table members: 71.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.47 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           -0.8903       41.9797              --- 
+      0     0       40.7731    48       -0.8903       40.7731       82     --- 
+*     0+    0                           39.5296       40.7731             3.15%
+      0     0       39.7225    48       39.5296      Cuts: 61      114    0.49%
+*     0+    0                           39.6843       39.7225             0.10%
+      0     0       39.7164    48       39.6843      Cuts: 49      144    0.08%
+*     0+    0                           39.6862       39.7164             0.08%
+      0     0       39.7152    48       39.6862      Cuts: 40      168    0.07%
+      0     0       39.7135    48       39.6862      Cuts: 30      191    0.07%
+      0     0       39.7134    48       39.6862      Cuts: 24      204    0.07%
+      0     2       39.7134    42       39.6862       39.7129      204    0.07%
+Elapsed time = 0.02 sec. (10.89 ticks, tree = 0.01 MB, solutions = 3)
+*    10+    8                           39.6863       39.7105             0.06%
+*    11     8      integral     0       39.6864       39.7105      258    0.06%
+*    42    30      integral     0       39.6865       39.7094      399    0.06%
+*    43    28      integral     0       39.6866       39.7094      400    0.06%
+*    60+   39                           39.6867       39.7090             0.06%
+*    69    45      integral     0       39.6883       39.7090      523    0.05%
+*    70    42      integral     0       39.6887       39.7090      528    0.05%
+*   120+   68                           39.6891       39.7056             0.04%
+*   125    70      integral     0       39.6895       39.7056      801    0.04%
+*   182    89      integral     0       39.6895       39.7024     1106    0.03%
+*   282+  112                           39.6899       39.6997             0.02%
+
+Cover cuts applied:  1
+Implied bound cuts applied:  70
+Flow cuts applied:  4
+Mixed integer rounding cuts applied:  9
+Zero-half cuts applied:  1
+Lift and project cuts applied:  1
+Gomory fractional cuts applied:  8
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (10.91 ticks)
+Sequential b&c:
+  Real time             =    0.07 sec. (55.56 ticks)
+                          ------------
+Total (root+branch&cut) =    0.08 sec. (66.47 ticks)
+
+Solution pool: 15 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  3.9689884135e+01
+Current MIP best bound =  3.9693842752e+01 (gap = 0.00395862, 0.01%)
+Solution time =    0.08 sec.  Iterations = 3227  Nodes = 585 (100)
+Deterministic time = 66.47 ticks  (801.33 ticks/sec)
+
+
+Incumbent solution
+Variable Name           Solution Value
+F                            45.000000
+f1                            0.950116
+f2                            4.360000
+y126                          1.000000
+y35                           1.000000
+y168                          1.000000
+y245                          1.000000
+y11                           1.000000
+y265                          1.000000
+y105                          1.000000
+s126                          8.742000
+s35                           8.070000
+s168                          8.972545
+s245                          8.805528
+s11                           8.971808
+s265                          8.818636
+s105                          8.680106
+s71                           8.210000
+x172x35x1                     1.000000
+x231x35x1                     1.000000
+x44x11x1                      1.000000
+x5x105x1                      1.000000
+x134x105x1                    1.000000
+x238x245x1                    1.000000
+x238x265x1                    1.000000
+x48x126x2                     1.000000
+x8x168x2                      2.000000
+x44x11x2                      1.000000
+x61x265x2                     1.000000
+x158x126x3                    1.000000
+x249x245x3                    1.000000
+x126x0x2                      1.000000
+x126x0x3                      1.000000
+x35x0x1                       2.000000
+x168x0x2                      2.000000
+x245x0x1                      1.000000
+x245x0x3                      1.000000
+x11x0x1                       1.000000
+x11x0x2                       1.000000
+x265x0x1                      1.000000
+x265x0x2                      1.000000
+x105x0x1                      2.000000
+s48                           7.116428
+z48z126z2                     1.000000
+s172                          6.380000
+z172z35z1                     1.000000
+z172z105z1                    1.000000
+s231                          6.440000
+z231z35z1                     1.000000
+z231z105z1                    1.000000
+s8                            7.461082
+z8z168z2                      1.000000
+s158                          7.252982
+z158z126z3                    1.000000
+s249                          7.297022
+z249z245z3                    1.000000
+s44                           7.471082
+z44z11z1                      1.000000
+z44z11z2                      1.000000
+s125                          7.367695
+s5                            7.307318
+z5z105z1                      1.000000
+s61                           7.304511
+z61z265z2                     1.000000
+s134                          7.150000
+z134z105z1                    1.000000
+s238                          7.502616
+z238z245z1                    1.000000
+z238z265z1                    1.000000
+s255                          7.762855
+All other variables in the range 1-211 are 0.

@@ -1,0 +1,89 @@
+
+Log started (V12.10.0.0) Thu Apr 22 12:04:18 2021
+
+
+Problem 'asset.lp' read.
+Read time = 0.00 sec. (0.01 ticks)
+New value for time limit in seconds: 0.12
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_TimeLimit                               0.12
+Found incumbent of value 0.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 78 rows and 39 columns.
+MIP Presolve modified 93 coefficients.
+Aggregator did 46 substitutions.
+Reduced MIP has 35 rows, 60 columns, and 159 nonzeros.
+Reduced MIP has 59 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.33 ticks)
+Probing time = 0.00 sec. (0.18 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve modified 4 coefficients.
+Reduced MIP has 35 rows, 60 columns, and 159 nonzeros.
+Reduced MIP has 59 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.12 ticks)
+Probing time = 0.00 sec. (0.18 ticks)
+Clique table members: 178.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.15 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            0.0000      145.0000              --- 
+*     0+    0                           45.0000      145.0000           222.22%
+      0     0       64.3403    18       45.0000       64.3403       35   42.98%
+*     0+    0                           55.0000       64.3403            16.98%
+      0     0        cutoff             55.0000       55.0000       41    0.00%
+Elapsed time = 0.01 sec. (1.35 ticks, tree = 0.01 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (1.36 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (1.36 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  5.5000000000e+01
+Solution time =    0.01 sec.  Iterations = 41  Nodes = 0
+Deterministic time = 1.36 ticks  (141.17 ticks/sec)
+
+
+Incumbent solution
+Variable Name           Solution Value
+F                            55.000000
+y2                            1.000000
+y7                            1.000000
+y29                           1.000000
+y37                           1.000000
+x24x2x1                       1.000000
+x24x2x2                       1.000000
+x2x29x1                       1.000000
+x2x37x2                       1.000000
+x29x7x1                       1.000000
+x7x0x1                        1.000000
+x37x0x2                       1.000000
+s24                           4.973868
+s2                            6.780000
+z24z2z1                       1.000000
+z24z2z2                       1.000000
+s7                            9.470000
+s14                           7.330000
+s15                           9.160000
+s17                           9.280000
+s29                           7.976977
+s31                           9.340000
+s36                           9.460000
+s37                           8.590000
+s38                           8.274340
+z2z29z1                       1.000000
+z2z37z2                       1.000000
+z29z7z1                       1.000000
+s33                           6.000000
+All other variables in the range 1-148 are 0.

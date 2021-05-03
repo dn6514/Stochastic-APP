@@ -1,0 +1,140 @@
+
+Log started (V12.10.0.0) Tue Apr 20 03:48:15 2021
+
+Warning, line 550: Name 's109' does not exist.
+Warning, line 551: Name 's266' does not exist.
+Warning, line 552: Name 's277' does not exist.
+Warning, line 553: Name 's209' does not exist.
+Warning, line 554: Name 's170' does not exist.
+Warning, line 555: Name 's172' does not exist.
+Warning, line 556: Name 's270' does not exist.
+Warning, line 557: Name 's54' does not exist.
+
+Problem 'asset.lp' read.
+Read time = 0.00 sec. (0.03 ticks)
+New value for default parallel thread count: 1
+New value for time limit in seconds: 200
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               200
+Found incumbent of value 0.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 5 times.
+MIP Presolve eliminated 275 rows and 129 columns.
+MIP Presolve modified 380 coefficients.
+Aggregator did 77 substitutions.
+Reduced MIP has 45 rows, 59 columns, and 150 nonzeros.
+Reduced MIP has 52 binaries, 4 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.31 ticks)
+Probing fixed 8 vars, tightened 0 bounds.
+Probing time = 0.00 sec. (0.07 ticks)
+Cover probing fixed 0 vars, tightened 5 bounds.
+Tried aggregator 2 times.
+MIP Presolve eliminated 30 rows and 27 columns.
+Aggregator did 1 substitutions.
+Reduced MIP has 14 rows, 30 columns, and 55 nonzeros.
+Reduced MIP has 27 binaries, 3 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.14 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 14 rows, 30 columns, and 55 nonzeros.
+Reduced MIP has 27 binaries, 3 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.05 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+Clique table members: 22.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.03 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            6.0000       84.0000              --- 
+      0     0       42.0000     2        6.0000       42.0000       10  600.00%
+*     0+    0                           42.0000       42.0000             0.00%
+      0     0        cutoff             42.0000       42.0000       10    0.00%
+Elapsed time = 0.01 sec. (2.77 ticks, tree = 0.01 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (2.78 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (2.78 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  4.2000000000e+01
+Solution time =    0.01 sec.  Iterations = 10  Nodes = 0
+Deterministic time = 2.78 ticks  (355.65 ticks/sec)
+
+
+Incumbent solution
+Variable Name           Solution Value
+F                            42.000000
+y132                          1.000000
+y27                           1.000000
+y156                          1.000000
+y207                          1.000000
+y41                           1.000000
+x189x132x1                    1.000000
+x176x132x1                    1.000000
+x176x27x1                     1.000000
+x220x156x1                    1.000000
+x220x207x1                    1.000000
+x86x207x2                     1.000000
+x198x156x3                    1.000000
+x198x41x3                     1.000000
+x189x41x3                     1.000000
+x227x27x3                     1.000000
+x132x0x1                      2.000000
+x27x0x1                       1.000000
+x27x0x3                       1.000000
+x156x0x1                      1.000000
+x156x0x3                      1.000000
+x207x0x1                      1.000000
+x207x0x2                      1.000000
+x41x0x3                       2.000000
+s198                          7.997899
+s156                          9.330000
+z198z156z3                    1.000000
+s41                           9.470000
+z198z41z3                     1.000000
+s189                          7.192300
+s272                          7.870000
+s73                           7.880000
+s181                          7.880000
+s53                           7.890000
+s102                          7.890000
+s91                           7.930000
+s254                          7.950000
+s132                          8.912169
+z189z132z1                    1.000000
+s214                          8.949561
+s48                           8.100000
+s27                           9.110000
+s207                          9.330000
+s204                          9.380000
+z189z204z3                    1.000000
+s20                           9.390000
+s15                           9.400000
+s8                            9.420000
+z189z8z1                      1.000000
+z189z41z3                     1.000000
+s227                          7.466630
+z227z27z3                     1.000000
+z227z204z3                    1.000000
+z227z41z3                     1.000000
+s176                          7.739610
+z176z132z1                    1.000000
+z176z27z1                     1.000000
+z176z8z1                      1.000000
+s86                           7.742250
+z86z207z2                     1.000000
+s220                          7.886820
+z220z156z1                    1.000000
+z220z207z1                    1.000000
+s116                          9.130000
+z73z41z3                      1.000000
+All other variables in the range 1-274 are 0.

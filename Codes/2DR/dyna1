@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#PBS -q normal
+#PBS -l walltime=01:50:00
+#PBS -l mem=4GB
+
+ns=4;
+v=1;
+mkdir Dynamic$v;
+for ((k=1; k<=10; k++))
+do
+  mkdir DR$v;
+  cp stoc300 stoc150 DR$v/;
+  cp param2.txt DR$v/param.txt;
+  cp C1/C$k.txt DR$v/data.txt;
+  g++ -o dr$v dyndec$v.cpp;
+  ./dr$v;
+  for ((i=1; i<ns; i++))
+  do
+    g++ -o dr$v dyn$v.cpp;
+    ./dr$v;
+    cd DR$v/;
+    cp asset$i.lp asset.lp;
+    if [ $i == 1 ]; then
+      /home/595/dn6514/cplex -f stoc300;
+    else
+      /home/595/dn6514/cplex -f stoc150;
+    fi
+    mv cplex.log sol$i.log;
+    rm asset.lp;
+    cd ../;
+  done
+  g++ -o dr$v dynextr$v.cpp;
+  ./dr$v;
+  mv DR$v Dynamic$v/C$k;
+  rm dr$v;
+done

@@ -1,0 +1,210 @@
+
+Log started (V12.10.0.0) Fri Apr 23 11:14:42 2021
+
+
+Problem 'asset.lp' read.
+Read time = 0.01 sec. (0.32 ticks)
+New value for default parallel thread count: 1
+New value for time limit in seconds: 150
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               150
+Found incumbent of value -0.799217 after 0.00 sec. (0.14 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 2630 rows and 1564 columns.
+MIP Presolve modified 2108 coefficients.
+Aggregator did 280 substitutions.
+Reduced MIP has 384 rows, 383 columns, and 1575 nonzeros.
+Reduced MIP has 333 binaries, 24 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (6.57 ticks)
+Probing fixed 140 vars, tightened 5 bounds.
+Probing time = 0.00 sec. (0.62 ticks)
+Cover probing fixed 0 vars, tightened 49 bounds.
+Tried aggregator 2 times.
+MIP Presolve eliminated 212 rows and 189 columns.
+MIP Presolve modified 18 coefficients.
+Aggregator did 6 substitutions.
+Reduced MIP has 166 rows, 183 columns, and 536 nonzeros.
+Reduced MIP has 143 binaries, 14 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.17 ticks)
+Probing time = 0.00 sec. (0.17 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 166 rows, 183 columns, and 536 nonzeros.
+Reduced MIP has 143 binaries, 14 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.37 ticks)
+Probing time = 0.00 sec. (0.16 ticks)
+Clique table members: 51.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.74 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           -0.7992      596.0181              --- 
+      0     0      282.1417    44       -0.7992      282.1417       77     --- 
+*     0+    0                          277.7598      282.1417             1.58%
+      0     0      277.7679    44      277.7598      Cuts: 48      112    0.00%
+
+Cover cuts applied:  1
+Implied bound cuts applied:  15
+Zero-half cuts applied:  2
+Lift and project cuts applied:  1
+Gomory fractional cuts applied:  5
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (12.82 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (12.82 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  2.7775978132e+02
+Current MIP best bound =  2.7776787597e+02 (gap = 0.00809464, 0.00%)
+Solution time =    0.02 sec.  Iterations = 112  Nodes = 0 (1)
+Deterministic time = 12.82 ticks  (636.83 ticks/sec)
+
+
+Incumbent solution
+Variable Name           Solution Value
+F                           290.000000
+f1                            0.820219
+f2                           11.420000
+y133                          1.000000
+y171                          1.000000
+y100                          1.000000
+y203                          1.000000
+y14                           1.000000
+y24                           1.000000
+y68                           1.000000
+y168                          1.000000
+y138                          1.000000
+s134                          3.300000
+s91                           3.350000
+s22                           3.390000
+s173                          3.400000
+s98                           3.430000
+s18                           3.440000
+s27                           3.460000
+s63                           3.460000
+s3                            3.470000
+s54                           3.470000
+s82                           3.480000
+s159                          3.480000
+s140                          3.520000
+s155                          3.520000
+s186                          3.520000
+s30                           3.530000
+s175                          3.540000
+s209                          3.570000
+s36                           3.600000
+s83                           3.620000
+s4                            3.640000
+s73                           3.640000
+s77                           3.680000
+s79                           3.690000
+s188                          3.720000
+s55                           3.750000
+s66                           3.750000
+s28                           3.790000
+s151                          3.790000
+s137                          3.860000
+s94                           3.870000
+s29                           3.880000
+s88                           3.880000
+s76                           3.980000
+s118                          3.980000
+s59                           4.040000
+s207                          4.040000
+s200                          4.050000
+s34                           4.080000
+s157                          4.130000
+s121                          4.150000
+s185                          4.160000
+s133                          5.140617
+s1                            4.190000
+s171                          5.038823
+s15                           4.200000
+s100                          5.011701
+s202                          4.240000
+s104                          4.280000
+s129                          4.280000
+s35                           4.330000
+s56                           4.370000
+s203                          5.214816
+s127                          4.380000
+s62                           4.430000
+s33                           4.480000
+s14                           5.381860
+s24                           5.128081
+s136                          4.500000
+s68                           5.539070
+s168                          5.443563
+s138                          5.253919
+s206                          5.190000
+x108x133x1                    1.000000
+x108x203x1                    1.000000
+x149x100x1                    1.000000
+x64x203x1                     1.000000
+x179x24x1                     1.000000
+x179x138x1                    1.000000
+x132x100x2                    1.000000
+x132x68x2                     1.000000
+x64x171x2                     1.000000
+x158x133x2                    1.000000
+x158x68x2                     1.000000
+x120x14x2                     1.000000
+x149x171x3                    1.000000
+x120x168x3                    1.000000
+x176x14x3                     1.000000
+x176x168x3                    1.000000
+x86x24x3                      1.000000
+x86x138x3                     1.000000
+x133x0x1                      1.000000
+x133x0x2                      1.000000
+x171x0x2                      1.000000
+x171x0x3                      1.000000
+x100x0x1                      1.000000
+x100x0x2                      1.000000
+x203x0x1                      2.000000
+x14x0x2                       1.000000
+x14x0x3                       1.000000
+x24x0x1                       1.000000
+x24x0x3                       1.000000
+x68x0x2                       2.000000
+x168x0x3                      2.000000
+x138x0x1                      1.000000
+x138x0x3                      1.000000
+s108                          3.494907
+z108z133z1                    1.000000
+z108z203z1                    1.000000
+s132                          3.401037
+z132z100z2                    1.000000
+z132z68z2                     1.000000
+z132z206z2                    1.000000
+s149                          3.599186
+z149z171z3                    1.000000
+z149z100z1                    1.000000
+s64                           3.815638
+z64z171z2                     1.000000
+z64z203z1                     1.000000
+s158                          3.840568
+z158z133z2                    1.000000
+z158z68z2                     1.000000
+s120                          3.919389
+z120z14z2                     1.000000
+z120z168z3                    1.000000
+s176                          3.793173
+z176z14z3                     1.000000
+z176z168z3                    1.000000
+s179                          3.783317
+z179z24z1                     1.000000
+z179z138z1                    1.000000
+s86                           3.816384
+z86z24z3                      1.000000
+z86z138z3                     1.000000
+All other variables in the range 1-2231 are 0.

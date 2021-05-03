@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#PBS -q normal
+#PBS -l walltime=02:00:00
+#PBS -l mem=4GB
+
+ns=4;
+v=1;
+mkdir TpdStoc$v;
+for ((k=1; k<=10; k++))
+do
+  mkdir TPD$v;
+  cp stoc150 TPD$v/;
+  cp C1/C$k.txt TPD$v/data.txt;
+  cp param2.txt TPD$v/param.txt;
+  g++ -o tp$v tpddec$v.cpp;
+  ./tp$v;
+  for ((i=1; i<=ns; i++))
+  do
+    g++ -o tp$v tpd$v.cpp;
+    ./tp$v;
+    cd TPD$v/;
+    cp asset$i.lp asset.lp;
+    /home/595/dn6514/cplex -f stoc150;
+    mv cplex.log sol$i.log;
+    rm asset.lp;
+    cd ../;
+  done
+  g++ -o tp$v tpdextr$v.cpp;
+  ./tp$v;
+  mv TPD$v TpdStoc$v/C$k;
+  rm tp$v;
+done

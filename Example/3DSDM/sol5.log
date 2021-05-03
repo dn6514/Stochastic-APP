@@ -1,0 +1,83 @@
+
+Log started (V12.10.0.0) Thu Apr 22 12:01:46 2021
+
+
+Problem 'asset.lp' read.
+Read time = 0.00 sec. (0.01 ticks)
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+Found incumbent of value 0.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 6 times.
+MIP Presolve eliminated 70 rows and 23 columns.
+MIP Presolve modified 106 coefficients.
+Aggregator did 73 substitutions.
+Reduced MIP has 20 rows, 52 columns, and 116 nonzeros.
+Reduced MIP has 52 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.67 ticks)
+Probing time = 0.00 sec. (0.21 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 0 rows and 1 columns.
+Reduced MIP has 20 rows, 51 columns, and 116 nonzeros.
+Reduced MIP has 51 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.10 ticks)
+Probing time = 0.00 sec. (0.20 ticks)
+Clique table members: 142.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.07 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            0.0000       70.0000              --- 
+*     0+    0                            8.0000       70.0000           775.00%
+*     0+    0                           14.0000       70.0000           400.00%
+*     0     0      integral     0       20.0000       20.0000       15    0.00%
+Elapsed time = 0.01 sec. (1.37 ticks, tree = 0.00 MB, solutions = 3)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (1.37 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (1.37 ticks)
+
+Solution pool: 4 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  2.0000000000e+01
+Solution time =    0.01 sec.  Iterations = 15  Nodes = 0
+Deterministic time = 1.37 ticks  (161.62 ticks/sec)
+
+
+Incumbent solution
+Variable Name           Solution Value
+F                            20.000000
+y32                           1.000000
+y8                            1.000000
+y35                           1.000000
+y7                            1.000000
+x24x8x1                       1.000000
+x24x32x2                      1.000000
+x32x35x2                      1.000000
+x8x7x1                        1.000000
+x35x0x2                       1.000000
+x7x0x1                        1.000000
+s24                           4.768921
+s4                            6.000000
+s22                           6.000000
+s32                           6.341097
+z24z32z2                      1.000000
+s8                            6.328991
+z24z8z1                       1.000000
+s10                           6.160000
+s23                           7.340000
+s11                           9.190000
+s2                            9.230000
+s35                           9.250000
+s7                            9.260000
+z32z35z2                      1.000000
+z8z7z1                        1.000000
+All other variables in the range 1-150 are 0.
